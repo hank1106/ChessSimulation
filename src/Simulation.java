@@ -27,7 +27,7 @@ public class Simulation {
 				init++;
 			}
 		}
-		//int mean = 0;
+		
 		int sum = 0;
 		Position curr = new Position(0, 0);
 		for(int i = 0; i < T; i++)
@@ -36,7 +36,6 @@ public class Simulation {
 			System.out.println("position: " + curr.i + " " + curr.j);
 			System.out.println("Key value: " + chess[curr.i][curr.j]);
 			System.out.println("sum: " + sum);
-			//mean += sum % 311;
 			List<Position> moves = new ArrayList<Position>();
 			for(int k = 0; k < possibleMovesI.length; k++)
 			{
